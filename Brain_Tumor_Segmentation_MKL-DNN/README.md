@@ -56,17 +56,6 @@ git clone https://github.com/intel-iot-devkit/brain-tumor-segmentations.git
 
 ### Dependencies
 
-#### Miniconda
-Miniconda is essentially an installer for an empty conda environment, containing only Conda, its dependencies, and Python. Once Conda is installed, you can then install whatever package you need from scratch along with any desired version of Python.<br>
-Install the Miniconda using the below commands:
-```
-wget -O Miniconda3-latest-Linux-x86_64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-chmod +x Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh
-source ~/.bashrc
-```
-**Note:** Restart the terminal for the changes to take effect.
-
 #### NumPy
 NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
 
