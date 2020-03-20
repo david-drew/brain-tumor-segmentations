@@ -1,10 +1,10 @@
 # Brain Tumor Segmentation (BraTS) with MKL-DNN
 
-| Details           |              |
-|-----------------------|---------------|
-| Target OS:            |  Ubuntu\* 16.04 LTS   |
-| Programming Language: |  Python* 3.5 |
-| Time to Complete:    |  30-40min     |
+| Details               |                               |
+|-----------------------|-------------------------------|
+| Target OS:            |  Ubuntu\* 16.04 or 18.04 LTS  |
+| Programming Language: |  Python* 3.5 or newer         |
+| Time to Complete:     |  30-40min                     |
 
 ![brain-tumor-segmentation](docs/images/figure1.png)
 
@@ -56,17 +56,6 @@ git clone https://github.com/intel-iot-devkit/brain-tumor-segmentations.git
 
 ### Dependencies
 
-#### Miniconda
-Miniconda is essentially an installer for an empty conda environment, containing only Conda, its dependencies, and Python. Once Conda is installed, you can then install whatever package you need from scratch along with any desired version of Python.<br>
-Install the Miniconda using the below commands:
-```
-wget -O Miniconda3-latest-Linux-x86_64.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-chmod +x Miniconda3-latest-Linux-x86_64.sh
-./Miniconda3-latest-Linux-x86_64.sh
-source ~/.bashrc
-```
-**Note:** Restart the terminal for the changes to take effect.
-
 #### NumPy
 NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
 
@@ -94,8 +83,9 @@ The application uses the MRI scans from __Task01_BrainTumour.h5__ that is provid
 ## Setup the environment
 Activate the virtual environment of MKL using the below command:
 ```
-conda activate mkltf
+source /opt/intel/openvino/bin/setupvar.sh
 ``` 
+NOTE: Though we're not using OpenVINO for this tutorial, we are using the Python variables setup through the OpenVINO initialization.
 
 ## Run the Application
 Change the current directory to the git-cloned application code location on your system:
